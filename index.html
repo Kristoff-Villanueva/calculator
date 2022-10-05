@@ -9,32 +9,41 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="screen"></div>
+			<div>
+				<h1>KrisSai Calculator</h1>
+				<p>Version 2.0</p>
+			</div>
+			<div id="screen" class="screen"></div>
 			<div class="firstRow">
-				<button class="operator">-</button>
-				<button class="operator">/</button>
-				<button class="operator">*</button>
+				<button id="minus" class="operator">-</button>
+				<button id="divide" class="operator">/</button>
+				<button id="multiply" class="operator">X</button>
 			</div>
 			<div class="secondRow">
-				<button class="digits">7</button>
-				<button class="digits">8</button>
-				<button class="digits">9</button>
+				<button id="seven" class="digits">7</button>
+				<button id="eight" class="digits">8</button>
+				<button id="nine" class="digits">9</button>
 			</div>
 			<div class="thirdRow">
-				<button class="digits">4</button>
-				<button class="digits">5</button>
-				<button class="digits">6</button>
+				<button id="four" class="digits">4</button>
+				<button id="five" class="digits">5</button>
+				<button id="six" class="digits">6</button>
 			</div>
 			<div class="fourthRow">
-				<button class="digits">1</button>
-				<button class="digits">2</button>
-				<button class="digits">3</button>
+				<button id="one" class="digits">1</button>
+				<button id="two" class="digits">2</button>
+				<button id="three" class="digits">3</button>
 			</div>
 			<div class="fifthRow">
-				<button class="digits">0</button>
-				<button class="operator">.</button>
-				<button class="operator">+</button>
+				<button id="zero" class="digits">0</button>
+				<button id="dot" class="operator">•</button>
+				<button id="plus" class="operator">+</button>
+			</div>
+			<div id="enterCancel">
+				<button id="cancel" class="operator">C</button>
+				<button id="enter" class="enter operator">Enter</button>
 			</div>
 		</div>
+		<script src="scripts.js"></script>
 	</body>
 </html>

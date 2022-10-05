@@ -13,7 +13,7 @@ body {
 
 .container {
 	background-color: whitesmoke;
-	border-radius: 5px;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	height: 50%;
@@ -21,6 +21,7 @@ body {
 	padding: 10px 20px;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 5px 5px 5px lightslategray;
 }
 
 .firstRow,
@@ -35,6 +36,7 @@ body {
 .operator {
 	display: inline-block;
 	font-weight: bold;
+	color: whitesmoke;
 }
 
 button {
@@ -42,14 +44,25 @@ button {
 	height: 60px;
 	margin: 5px 5px;
 	font-size: 20px;
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.98);
+	/* Scaling button to 0.98 to its original size */
+	box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+	/* Lowering the shadow */
 }
 
 .screen {
-	width: 95%;
+	width: 92%;
 	height: 50px;
-	background-color: lightgreen;
+	background-color: darkseagreen;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
 }
 
 .screen,
@@ -60,9 +73,42 @@ button {
 
 .digits {
 	background-color: darkslategrey;
-	color: whitesmoke;
 }
 
 .operator {
 	background-color: orange;
+}
+
+.enter {
+	width: 60%;
+}
+
+#cancel {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+h2 {
+	margin-right: 10px;
+}
+
+.operator,
+.digits,
+.screen {
+	box-shadow: 3px 3px 3px lightslategray;
+}
+
+#enterCancel {
+	width: 100%;
+	display: flex;
+}
+
+h1 {
+	font-size: 20px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+p {
+	margin-top: 5px;
 }
